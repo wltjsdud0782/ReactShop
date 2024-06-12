@@ -1,0 +1,26 @@
+.joinForm-box{
+    height: 1500px;
+    width: 800px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.bottom-line-div{
+    border-bottom: 2px solid black;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.joinForm-table{
+    width: 700px;
+    margin: 0 auto;
+}
+.joinForm-table tbody tr{
+    height: 100px;
+}
+
+.small-text{
+    font-size: 10pt;
+    text-align: start;
+}

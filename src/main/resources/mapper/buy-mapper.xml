@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<mapper namespace="buyMapper">
+    <resultMap id="shopBuy" type="com.ssun.ShopPortfolio.buy.vo.ReBuyDetailVO">
+        <id     column="BUY_CODE"   property="buyCode"/>
+        <result column="MEMBER_ID"  property="memberId"/>
+        <result column="BUY_PRICE"  property="buyPrice"/>
+        <result column="BUY_DATE"   property="buyDate"/>
+        <collection property="reBuyDetailList" resultMap="buyDetail"/>
+    </resultMap>
+
+    <resultMap id="buyDetail" type="com.ssun.ShopPortfolio.buy.vo.ReBuyDetailVO">
+        <id     column="BUY_DETAIL_CODE"    property="buyDetailCode"/>
+        <result column="ITEM_CODE"          property="itemCode"/>
+        <result column="BUY_CNT"            property="buyCnt"/>
+        <result column="TOTAL_PRICE"        property="totalPrice"/>
+        <result column="BUY_CODE"           property="buyCode"/>
+        <!--    resultMap이 다른파일에 있기 때문에 mapper의 namespace 필요   -->
+        <association property="reItemVO" resultMap="itemMapper.item"/>
+    </resultMap>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Dovemayo_gothic';
+    font-size: 14pt;
+}
+
+/* 부트스트랩 속성변경 */
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.45);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.45), 0 0 8px rgb(0, 0, 0, 0.45);
+}
+.form-select:focus{
+    border-color: rgba(0, 0, 0, 0.45);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.45), 0 0 8px rgb(0, 0, 0, 0.45);
+}
